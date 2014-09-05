@@ -16,7 +16,7 @@ if ($modified != $current) {
 ?>
 <br><br>
 <?php
-$query = "INSERT `game_id` SET `game_id` ='$game_id', `game_name` ='$game_name', `ref_id` ='$ref', `created` ='$created', `modified` ='$modified';";
+$query = "INSERT `$table2` SET `game_id` ='$game_id', `game_name` ='$game_name', `ref_id` ='$ref', `created` ='$created', `modified` ='$modified';";
 @mysql_select_db($db) or die( "Unable to select database");
 mysql_query($query);
 // echo $query;
