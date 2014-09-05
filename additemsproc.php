@@ -37,7 +37,7 @@ if ($modified != $current) {
 // if ($page == "Please Select" OR $page == "Un-link") {
 // $page = "";
 // }
-$query = "INSERT `games` SET `part_num` = '$part_num', `desc` = '$desc', `instock` = '$instock', `game_name` ='$game_name', `ref_id` ='$ref', `created` ='$created', `modified` ='$modified';";
+$query = "INSERT `$table` SET `part_num` = '$part_num', `desc` = '$desc', `instock` = '$instock', `game_name` ='$game_name', `ref_id` ='$ref', `created` ='$created', `modified` ='$modified';";
 @mysql_select_db($db) or die( "Unable to select database");
 mysql_query($query);
 // echo $query;
