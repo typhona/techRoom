@@ -34,7 +34,7 @@ $instock2 = "$instock";
 ?>
 <br><br>
 <?php
-$query = "UPDATE `games` SET `part_num` = '$part_num', `desc` = '$desc', `instock` = '$instock2', `game_name` ='$game_name', `ref_id` ='$ref', `created` ='$created', `modified` ='$modified',`min` ='$min', `location` ='$location' WHERE `ref_id`='$ref';";
+$query = "UPDATE `$table` SET `part_num` = '$part_num', `desc` = '$desc', `instock` = '$instock2', `game_name` ='$game_name', `ref_id` ='$ref', `created` ='$created', `modified` ='$modified',`min` ='$min', `location` ='$location' WHERE `ref_id`='$ref';";
 @mysql_select_db($db) or die( "Unable to select database");
 mysql_query($query);
 // echo $query;
